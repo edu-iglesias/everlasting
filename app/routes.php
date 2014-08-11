@@ -1,16 +1,25 @@
 
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
+Route::get('test', function()
+{
+	session_start();
+    //$_SESSION['test'] = "okay";
+    //echo $_SESSION['test'];
+	Session::put('test','testing okay');
+	return Redirect::to('gettest');
+	
+});
+
+Route::get('gettest', function()
+{
+	session_start();
+    //return $_SESSION['test'];
+    return Session::get('test');
+});
+
+
+// --------------------------- TEST ROUTES ABOVE -----------------------------
 
 Route::get('/', function()
 {
