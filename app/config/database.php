@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'pts',
-			'username'  => 'root',
-			'password'  => '',
+			'host'      => 'tarlacpts.db.11922271.hostedresource.com',
+			'database'  => 'tarlacpts',
+			'username'  => 'tarlacpts',
+			'password'  => 'Srllc00!',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
