@@ -3,6 +3,7 @@
 
 Route::get('test', function()
 {
+	session_save_path("/tmp");
 	error_reporting(0);
 	session_start();
     //$_SESSION['test'] = "okay";
@@ -14,6 +15,7 @@ Route::get('test', function()
 
 Route::get('gettest', function()
 {
+	session_save_path("/tmp");
 	error_reporting(0);
 	session_start();
     //return $_SESSION['test'];
