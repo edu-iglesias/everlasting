@@ -8,6 +8,11 @@
     </style>
 	<!-- Creates the form -->
     <?php phpinfo() ?>
+    <?php
+        session_start();
+        $_SESSION['test'] = "okay";
+        echo $_SESSION['test'];
+    ?>
     {{ Form::open(array('class' => 'form-signin', 'role' => 'form')) }}
     	<!-- Adds the logo -->
     	{{ HTML::image('img/logo2.png', 'Tarlac Procurement Tracking System', array('id' => 'logo')) }}
