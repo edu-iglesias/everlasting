@@ -3,6 +3,7 @@
 
 Route::get('test', function()
 {
+	error_reporting(0);
 	session_start();
     //$_SESSION['test'] = "okay";
     //echo $_SESSION['test'];
@@ -13,6 +14,7 @@ Route::get('test', function()
 
 Route::get('gettest', function()
 {
+	error_reporting(0);
 	session_start();
     //return $_SESSION['test'];
     return Session::get('test');
