@@ -9,6 +9,7 @@
 	<!-- Creates the form -->
     <?php phpinfo() ?>
     <?php
+        error_reporting(0);
         session_start();
         $_SESSION['test'] = "okay";
         echo $_SESSION['test'];
